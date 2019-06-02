@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
 import axios from "axios";
+=======
+import axios from 'axios';
+>>>>>>> tmp
 
 export default class PortfolioDetail extends Component {
   constructor(props) {
@@ -23,14 +27,21 @@ export default class PortfolioDetail extends Component {
         { withCredentials: true }
       )
       .then(response => {
+<<<<<<< HEAD
         this.setState({
           portfolioItem: response.data.portfolio_item
         });
+=======
+        this.setState ({
+          portfolioItem: response.data.portfolio_item
+        })
+>>>>>>> tmp
       })
       .catch(error => {
         console.log("getportfolioitem error", error);
       });
   }
+<<<<<<< HEAD
 
   render() {
     const {
@@ -71,5 +82,29 @@ export default class PortfolioDetail extends Component {
         </div>
       </div>
     );
+=======
+  
+  render() {
+  const {
+    banner_image_url,
+    category,
+    description,
+    logo_url,
+    name,
+    thumb_image_url,
+    url
+  } = this.state.portfolioItem;
+
+  return (
+    <div className="container">
+      <div className="name">
+        <h2>{name}</h2>
+      </div>
+      <div className="description">
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+>>>>>>> tmp
   }
 }

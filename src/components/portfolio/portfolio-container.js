@@ -16,6 +16,7 @@ export default class PortfolioContainer extends Component {
     this.handleFilter = this.handleFilter.bind(this);
   }
 
+<<<<<<< HEAD
   handleFilter(filter) {
     if (filter === "CLEAR_FILTERS") {
       this.getPortfolioItems();
@@ -24,11 +25,26 @@ export default class PortfolioContainer extends Component {
     }
   }
 
+=======
+handleFilter(filter) {
+    if (filter === "CLEAR_FILTERS") {
+      this.getPortfolioItems();
+    } else {
+    this.getPortfolioItems(filter);
+      }
+    }
+  
+
+
+  
+
+>>>>>>> tmp
   getPortfolioItems(filter = null) {
     axios
       .get("https://wubbalubbadubbdubb.devcamp.space/portfolio/portfolio_items")
       .then(response => {
         if (filter) {
+<<<<<<< HEAD
           this.setState({
             data: response.data.portfolio_items.filter(item => {
               return item.category === filter;
@@ -39,6 +55,19 @@ export default class PortfolioContainer extends Component {
             data: response.data.portfolio_items
           });
         }
+=======
+        this.setState({
+          data: response.data.portfolio_items.filter(item => {
+            return item.category === filter;
+          })
+        });
+        } else {
+        this.setState({
+          data: response.data.portfolio_items
+        });
+      }
+        
+>>>>>>> tmp
       })
       .catch(error => {
         console.log(error);
@@ -85,7 +114,11 @@ export default class PortfolioContainer extends Component {
             className="btn"
             onClick={() => this.handleFilter("CLEAR_FILTERS")}
           >
+<<<<<<< HEAD
             All
+=======
+            Clear filter
+>>>>>>> tmp
           </button>
         </div>
         <div className="portfolio-items-wrapper">{this.portfolioItems()}</div>
