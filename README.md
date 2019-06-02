@@ -1,2 +1,2 @@
-# Jordan Hudgens React Portfolio Application
+# ROUGH DRAFT of Bryce Cox React Portfolio
 
