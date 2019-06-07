@@ -1,17 +1,4 @@
 import {
-<<<<<<< HEAD
-    faTrash,
-    faSignOutAlt,
-    faEdit,
-    faSpinner,
-    faArrowCircleUp
-  } from "@fortawesome/free-solid-svg-icons";
-
-import { library } from "@fortawesome/fontawesome-svg-core";
-
-const Icons = () => {
-    return library.add(faTrash, faSignOutAlt, faEdit, faSpinner, faArrowCircleUp);
-=======
   faTrash,
   faSignOutAlt,
   faEdit,
@@ -36,7 +23,6 @@ const Icons = () => {
     faMapMarkedAlt,
     faLock
   );
->>>>>>> tmp
 };
 
 export default Icons;
