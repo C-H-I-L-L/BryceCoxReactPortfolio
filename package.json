@@ -63,13 +63,10 @@
     "html-to-draftjs": "^1.4.0",
     "html-webpack-plugin": "^3.2.0",
     "install": "^0.12.2",
+    "js-yaml": "^3.13.1",
     "moment": "^2.22.2",
     "node": "^10.15.3",
-<<<<<<< HEAD
-    "node-sass": "^4.9.2",
-=======
     "node-sass": "^4.12.0",
->>>>>>> tmp
     "postcss-loader": "^2.1.6",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
