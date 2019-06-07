@@ -7,21 +7,15 @@ export default class BlogForm extends Component {
 
     this.state = {
       title: "",
-<<<<<<< HEAD
-      blog_status: ""
-=======
       blog_status: "",
       content: "",
       featured_image: "",
       apiUrl: "https://wubbalubbadubbdubb.devcamp.space/portfolio/portfolio_blogs",
       apiAction: "post"
->>>>>>> tmp
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-<<<<<<< HEAD
-=======
     this.handleRichTextEditorChange = this.handleRichTextEditorChange.bind(
       this
     );
@@ -85,7 +79,6 @@ export default class BlogForm extends Component {
 
   handleRichTextEditorChange(content) {
     this.setState({ content });
->>>>>>> tmp
   }
 
   buildForm() {
@@ -98,21 +91,12 @@ export default class BlogForm extends Component {
   }
 
   handleSubmit(event) {
-<<<<<<< HEAD
-    axios
-      .post(
-        "https://wubbalubbadubbdubb.devcamp.space/portfolio/portfolio_blogs",
-        this.buildForm(),
-        { withCredentials: true }
-      )
-=======
     axios({
       method: this.state.apiAction,
       url: this.state.apiUrl,
       data: this.buildForm(),
       withCredentials: true
     })
->>>>>>> tmp
       .then(response => {
         this.props.handleSuccessfullFormSubmission(
           response.data.portfolio_blog
@@ -122,8 +106,6 @@ export default class BlogForm extends Component {
           title: "",
           blog_status: ""
         });
-<<<<<<< HEAD
-=======
 
         if (this.props.editMode) {
           // update blog detail
@@ -133,7 +115,6 @@ export default class BlogForm extends Component {
           response.data.portfolio_blog
         );
         }
->>>>>>> tmp
       })
       .catch(error => {
         console.log("handleSubmit for blog error", error);
@@ -169,8 +150,6 @@ export default class BlogForm extends Component {
           />
         </div>
 
-<<<<<<< HEAD
-=======
         <div className="one-column">
           <RichTextEditor
             handleRichTextEditorChange={this.handleRichTextEditorChange}
@@ -206,7 +185,6 @@ export default class BlogForm extends Component {
           )}
         </div>
 
->>>>>>> tmp
         <button className="btn">Save</button>
       </form>
     );
