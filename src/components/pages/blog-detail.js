@@ -89,7 +89,7 @@ export default class BlogDetail extends Component {
 
           <div className="content">{content}</div>
         </div>
-    );
+        );
+      }
     }
   }
-}
