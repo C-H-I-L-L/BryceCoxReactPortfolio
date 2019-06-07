@@ -12,10 +12,6 @@ const Icons = () => {
 };
 
 export default function() {
-<<<<<<< HEAD
-  return <div>Contact</div>;
-}
-=======
   return <div className="meta-container">
     <hr></hr>
   
@@ -36,4 +32,3 @@ export default function() {
   </div>
   </div>;
 }
->>>>>>> tmp

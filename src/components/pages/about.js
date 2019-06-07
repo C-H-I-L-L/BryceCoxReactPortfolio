@@ -1,10 +1,6 @@
 import React from "react";
 
 export default function() {
-<<<<<<< HEAD
-  return <div>About</div>;
-}
-=======
   return  <div className="meta-container">
           <hr></hr>
           <div className="container">
@@ -22,4 +18,3 @@ export default function() {
 
 // left side image taking up 50% of vw
 // right side bio that's centered vert. and horiz.
->>>>>>> tmp
